@@ -1,9 +1,9 @@
 import express from "express";
 import {
 	deleteUser,
-	followUser,
+	
 	getUser,
-	unFollowUser,
+	
 	updateUser,
 } from "../Controllers/UserController.js";
 
