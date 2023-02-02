@@ -108,4 +108,21 @@
         
     top: 12rem;
   }
-  
+  .infoButton{
+    /* padding: 2rem 2rem; */
+    font-size: 10px;
+    
+  }
+  .sign{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .dont{
+    padding-left: 8rem;
+    color: #9c1d98;
+  }
+  form>h1{
+    align-self: center;
+    
+  }
