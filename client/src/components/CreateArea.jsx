@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import AddIcon from '@mui/icons-material/Add';
 import Fab from '@mui/material/Fab';
-
+import {useSelector} from "react-redux"
 import Zoom from '@mui/material/Zoom';
 
 function CreateArea(props) {
@@ -11,6 +11,8 @@ function CreateArea(props) {
     title: "",
     content: ""
   });
+
+  const {user} = useSelector((state)=>state.AuthReducer.authData)
 
   function handleChange(event) {
     const { name, value } = event.target;
