@@ -8,4 +8,5 @@ router.get("/:id", getPost);
 router.put("/:id", updatePost);
 router.delete("/:id", deletePost);
 
+
 export default router;
