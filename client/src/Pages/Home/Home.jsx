@@ -5,6 +5,7 @@ import Note from "../../components/Note";
 import CreateArea from "../../components/CreateArea";
 import { useDispatch, useSelector } from "react-redux";
 import { getPost } from "../../Actions/PostAction";
+import './Home.css'
 
 // function Home() {
 // 	const [notes, setNotes] = useState([]);
@@ -73,6 +74,10 @@ function Home() {
 	return (
 		<div>
 			<Header />
+			<div className="welcome">
+			<span>Welcome {user.username }</span>
+			</div>
+			
 			<CreateArea onAdd={addNote} />
 			{loading
 				? "Fetching Posts..."

@@ -1,0 +1,12 @@
+.welcome{
+    color: black;
+    font-size: 15px;
+    font-weight: bold ;
+    top: 20px;
+    
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
