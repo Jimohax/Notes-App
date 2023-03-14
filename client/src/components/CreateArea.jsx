@@ -17,6 +17,14 @@ function CreateArea(props) {
 	const content = useRef();
   const dispatch = useDispatch()
 
+	// className();
+
+	// function className() {
+	// 	let className = "btn btn-button";
+	// 	className += isExpanded ? "primary" : "secondary";
+	// }
+
+	 
 	function handleChange(event) {
 		const { name, value } = event.target;
 
