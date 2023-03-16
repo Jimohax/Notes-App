@@ -5,7 +5,8 @@ import Note from "../../components/Note";
 import CreateArea from "../../components/CreateArea";
 import { useDispatch, useSelector } from "react-redux";
 import { getPost } from "../../Actions/PostAction";
-import './Home.css'
+import './Home.css';
+import Counter from '../../components/Counter'
 
 // function Home() {
 // 	const [notes, setNotes] = useState([]);
@@ -48,6 +49,7 @@ import './Home.css'
 function Home() {
 	const [notes, setNotes] = useState([]);
 	const dispatch = useDispatch();
+	
 	const { user, loading } = useSelector(
 		(state) => state.AuthReducer.authData
 	);
@@ -68,7 +70,7 @@ function Home() {
 			return prevNotes.filter((noteItem, index) => {
 				return index !== id;
 			});
-		});
+		}); 
 	}
 
 	return (
@@ -83,6 +85,7 @@ function Home() {
 				? "Fetching Posts..."
 				: posts.map((noteItem, index) => {
 						return (
+						<div>
 							<Note
 								key={index}
 								id={index}
@@ -90,6 +93,9 @@ function Home() {
 								content={noteItem.content}
 								onDelete={deleteNote}
 							/>
+							
+						</div>
+						
 						);
 				  })}
 			<Footer />

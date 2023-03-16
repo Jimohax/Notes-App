@@ -24,7 +24,7 @@ function CreateArea(props) {
 	// 	className += isExpanded ? "primary" : "secondary";
 	// }
 
-	 
+	
 	function handleChange(event) {
 		const { name, value } = event.target;
 
