@@ -41,7 +41,9 @@ const App2 = () => {
 	}
   return (
 <div className="App2">
-    <Navbar/>
+    <Navbar
+    counters={counters}
+    />
     <Counters
     onDelete={handleDelete}
     onReset={handleReset}
