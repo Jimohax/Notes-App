@@ -3,7 +3,7 @@ import "./Counter.css";
 
 const Counter = (props) => {
     
-const {id, value} = props.counter;
+const {value} = props.counter;
 	
 
 	return (
@@ -11,7 +11,7 @@ const {id, value} = props.counter;
             
 			{props.children}
 			<span className="c-tag" style={{backgroundColor: value==0? "yellow":"rgb(15, 92, 234)", color:value==0? "black":"white" }}>{value == 0? "Zero": value}</span>
-			<button className="c-button" onClick={()=>props.handleIncrement(props.counter)}>
+			<button className="c-button" onClick={()=>props.onIncrement(props.counter)}>
 				Increment
 			</button>
             <button className="c-button" style={{backgroundColor: "red", marginLeft: "1rem"}} onClick={()=>props.onDelete(props.counter)}>Delete</button>
